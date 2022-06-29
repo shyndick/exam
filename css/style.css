@@ -206,3 +206,11 @@
     vertical-align: super;
     font-size: 25px;
 }
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+    border-bottom: 2px solid #eeeeee;
+}
