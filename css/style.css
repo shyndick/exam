@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 80%;
+    width: 1160px;
     margin: 0 auto;
 }
 
@@ -73,7 +73,7 @@
     color: #283136;
 }
 
-.header_button {
+.button {
     font-size: 16px;
     line-height: 18px;
     border: none;
@@ -82,3 +82,37 @@
     border-radius: 2px;
     background-color: #fb565a;
 }
+
+.zakaz {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+    
+}
+
+
+
+.zakaz_item:nth-child(-n+3) {
+    margin-top: 80px;
+
+}
+
+.zakaz_item h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.zakaz_item:nth-child(7),
+.zakaz_item:nth-child(8),
+.zakaz_item:nth-child(9) {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+}
+
+.zakaz_item .button {
+    padding: 20px 40px;
+    margin-bottom: 80px;
+}
+
