@@ -1,0 +1,240 @@
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .header_nav{
+        padding-top: 30px;
+    }
+
+    .nav_toggle {
+        display: inline-block;
+    }
+
+    .header_nav_nav ul,
+    .header_nav_basket {
+        display: none;
+    }
+
+    #nav_toggle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .header_nav_nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        opacity: .9;
+        padding: 5%;
+        min-width: 200px;
+        height: 100%; 
+        z-index: 1;
+    }
+
+    .header_nav_nav a{
+        color: #fff;
+        
+    }
+
+    .header_nav_nav li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .header_nav_nav li:last-child {
+        display: inline-block;
+    }
+
+    .header_main {
+        background-size: 550px;
+    }
+
+    .header_main_box {
+        width: 380px;
+        padding: 40px 0;
+    }
+
+    .zakaz {
+        
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 50px;
+        text-align: center;
+        
+    }
+
+    .zakaz_item:nth-child(-n+3) {
+        margin-top: 30px;
+    
+    }
+
+    .zakaz_item img {
+        max-width: 100%;
+    }
+
+    .zakaz_item .button {
+    
+        margin-bottom: 30px;
+    }
+
+    .info_item1,
+    .info_item2 {
+        width: 48%;
+        margin-top: 30px;
+    }
+
+    .info_item1 p,
+    .info_item1_title {
+        margin: 20px 0; 
+    }
+
+    .info_item2 h3 {
+        margin: 50px 0;
+    }
+
+    .info_item1_title {
+        margin:0 0 20px 0;
+    }
+    
+    .info_item1 h3 {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: 500;
+    
+    }
+
+    c
+
+    .info_item2_items {
+        justify-content: center;
+    }
+
+    .info {
+        padding-bottom: 30px;
+    }
+    
+
+    .contact_wrapper {
+        margin: 30px 0;
+    }
+
+    .contact_text {
+        width: 550px;
+    }
+
+    .contact_wrapper {
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+
+    }
+
+    @media (max-width: 768px) {
+        .header_main {
+            background-size:contain;
+            background-position: center center;
+        }
+
+        .header_main_box {
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+
+        .header_h3,
+        .header_main_box_subtitle {
+            background-color: #eeeeeeb7;
+            border-radius: 30px;
+        
+            padding: 0 40px;
+        }
+
+        .header .button {
+            border: 3px solid #eeeeee;
+        }
+
+        .button {
+            padding: 20px 35px;
+        }
+
+        .zakaz {
+        
+            grid-template-columns: auto auto auto;
+            grid-column-gap: 20px; 
+        }
+
+        .info_item1 h3 {
+            font-size: 36px;
+        }
+
+        .info_item1 p,
+        .info_item1_title {
+        margin: 10px 0; 
+    }
+
+    .info_item1_subtitle:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+        .info_item2 img {
+            max-width: 100%;
+            margin-top: 50px;
+        }
+
+        .info_item2_items {
+            justify-content: space-evenly;
+        }
+
+        .info_item2_item:not(:last-child) {
+            margin-right: 0px;
+        }
+
+        .info_item2_item {
+            width: 32%;
+        }
+
+        .info_item2 h3 {
+            margin: 50px 0 5px;
+        }
+
+        .logo {
+            padding: 10px 0;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        
+
+        .iframe_contact {
+            padding: 20px;
+            top: 60px;
+            left: 60px;
+        }
+
+        .iframe_contact .button {
+            padding: 20px 35px;
+        }
+
+        .contact_icon {
+        width: 60px;
+        height: 60px;
+        font-size: 23px;
+        }
+
+        .contact_text {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+
+    }
+
+@media (max-width: 670px) {
+    .zakaz {
+        
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px; 
+    }
+}
