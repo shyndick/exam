@@ -65,8 +65,8 @@
         
     }
 
-    .zakaz_item:nth-child(-n+3) {
-        margin-top: 30px;
+    .zakaz_item{
+        margin: 30px 0;
     
     }
 
@@ -75,8 +75,7 @@
     }
 
     .zakaz_item .button {
-    
-        margin-bottom: 30px;
+        margin: 0 auto;
     }
 
     .info_item1,
@@ -105,14 +104,18 @@
     
     }
 
-    c
 
     .info_item2_items {
         justify-content: center;
+        margin: 0 auto;
     }
 
     .info {
         padding-bottom: 30px;
+    }
+
+    .iframe_contact {
+        left: 100px;
     }
     
 
