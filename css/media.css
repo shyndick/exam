@@ -14,9 +14,6 @@
 }
 
 @media (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
 
     .header_nav{
         padding-top: 30px;
@@ -41,8 +38,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        background-color: rgb(0, 0, 0);
-        opacity: .9;
+        background-color: rgb(219, 217, 217);
+        opacity: .95;
         padding: 5%;
         min-width: 200px;
         height: 100%; 
@@ -50,7 +47,7 @@
     }
 
     .header_nav_nav a{
-        color: #fff;
+        color: rgb(70, 70, 70);
         
     }
 
@@ -61,6 +58,15 @@
 
     .header_nav_nav li:last-child {
         display: inline-block;
+    }
+
+    .header_nav_nav li:last-child a{
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+
+    .header_nav_nav li i {
+        margin-left: 10px;
     }
 
     .header_main {
@@ -184,7 +190,7 @@
         }
 
         .header .button {
-            border: 3px solid #eeeeee;
+            border: 1px solid #eeeeee;
         }
 
         .button {
@@ -284,7 +290,8 @@
         }
 
         .zakaz_item {
-            max-width: 280px;
+            max-width: 320px;
+            grid-row-gap: 15px;
         }
 
         .zakaz_item img {
@@ -304,6 +311,26 @@
 
         .logo_item {
             padding: 15px;
+        }
+
+        .info_item2_item_subtitle {
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 590px) {
+        .zakaz {
+        
+            grid-template-columns: auto;
+            
+        }
+
+        .zakaz_item:nth-child(3) {
+            grid-row-start: auto;
+            grid-row-end: auto;
+            grid-column-start: auto;
+            grid-column-end: auto;
+           margin-top: 30px;
         }
     }
 
@@ -331,19 +358,7 @@
             margin-bottom: 20px;
         }
 
-        .zakaz {
         
-            grid-template-columns: auto;
-            
-        }
-
-        .zakaz_item:nth-child(3) {
-            grid-row-start: auto;
-            grid-row-end: auto;
-            grid-column-start: auto;
-            grid-column-end: auto;
-           margin-top: 30px;
-        }
 
         .info_item1 p {
             text-align: justify;
@@ -353,10 +368,17 @@
             text-align: left;
         }
 
+        .iframe {
+            margin-top: 10px;
+        }
+
         .iframe_contact {
             position: unset;
             text-align: center;
-            background-color: #e1e1e1;
+        }
+
+        .iframe_contact .button {
+            margin: 0;
         }
         
 
