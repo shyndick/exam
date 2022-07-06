@@ -332,6 +332,11 @@
             grid-column-end: auto;
            margin-top: 30px;
         }
+	
+	.info_item1_subtitle {
+            text-align: left;
+	
+	}
     }
 
     @media (max-width: 425px) {
